@@ -1,0 +1,12 @@
+---
+version: "3"
+
+services:
+  jupyter-lab:
+    container_name: jupyter-lab
+    image: amalic/jupyterlab
+    ports:
+      - "8887:8888"
+    environment:
+      - PASSWORD=your_password
+    
